@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Árboles y montículos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Árboles y montículos</h1>
+    <p>Prueba cada estructura y mira cómo se reacomoda.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Árbol binario de búsqueda</h2>
+      <p>Los menores van a la izquierda y los mayores a la derecha. Buscar visita una sola rama.</p>
+      <form id="form-bst" autocomplete="off">
+        <label for="valor-bst">Número</label>
+        <input id="valor-bst" inputmode="numeric" placeholder="35">
+        <button type="submit">Insertar</button>
+        <button type="button" id="buscar-bst">Buscar</button>
+        <button type="button" id="eliminar-bst" class="secundario">Eliminar</button>
+      </form>
+      <p id="mensaje-bst" class="mensaje" role="status"></p>
+      <div class="desplazable"><svg id="lienzo-bst" role="img" aria-label="Dibujo del árbol binario"></svg></div>
+      <p id="datos-bst" class="tenue"></p>
+      <table><tbody id="recorridos"></tbody></table>
+    </section>
+
+    <section>
+      <h2>Árbol general</h2>
+      <p>Cada nodo puede tener cualquier cantidad de hijos, como las carpetas de una computadora.</p>
+      <form id="form-general" autocomplete="off">
+        <label for="valor-general">Nombre</label>
+        <input id="valor-general" maxlength="30" placeholder="notas.txt">
+        <label for="padre-general">dentro de</label>
+        <select id="padre-general"></select>
+        <button type="submit">Agregar</button>
+      </form>
+      <p id="mensaje-general" class="mensaje" role="status"></p>
+      <div id="vista-general"></div>
+      <p id="datos-general" class="tenue"></p>
+    </section>
+
+    <section>
+      <h2>Montículo (heap)</h2>
+      <p>Un árbol completo guardado en un arreglo. La raíz siempre es el mayor (o el menor).</p>
+      <form id="form-monticulo" autocomplete="off">
+        <label for="valor-monticulo">Número</label>
+        <input id="valor-monticulo" inputmode="numeric" placeholder="30">
+        <button type="submit">Insertar</button>
+        <button type="button" id="extraer-monticulo" class="secundario">Extraer la raíz</button>
+        <label for="tipo-monticulo">Tipo</label>
+        <select id="tipo-monticulo">
+          <option value="max">Máximos</option>
+          <option value="min">Mínimos</option>
+        </select>
+      </form>
+      <p id="mensaje-monticulo" class="mensaje" role="status"></p>
+      <div class="desplazable"><table id="tabla-monticulo" class="monticulo"></table></div>
+      <p id="arreglo-monticulo" class="tenue"></p>
+    </section>
+  </main>
+
+  <script src="js/arboles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estructuras lineales</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Estructuras lineales</h1>
+    <p>Listas, pilas y colas hechas con nodos enlazados. Prueba cada operación y mira qué le pasa a la estructura.</p>
+  </header>
+
+  <main>
+    <nav id="selector" aria-label="Estructura"></nav>
+    <p id="idea"></p>
+
+    <form id="formulario" autocomplete="off">
+      <label for="valor">Valor</label>
+      <input id="valor" maxlength="20" placeholder="Por ejemplo, 7">
+      <div id="acciones"></div>
+      <button type="button" id="limpiar" class="secundario">Vaciar</button>
+    </form>
+
+    <p id="mensaje" role="status"></p>
+    <section id="vista" aria-label="Contenido de la estructura"></section>
+    <p id="tamano"></p>
+
+    <section id="balance">
+      <h2>Una pila en acción: paréntesis balanceados</h2>
+      <p>Cada símbolo que abre entra a una pila; cada símbolo que cierra debe coincidir con el tope.</p>
+      <label for="texto-balance">Expresión</label>
+      <input id="texto-balance" placeholder="(a + [b * c]) / {d}">
+      <p id="resultado-balance" role="status"></p>
+    </section>
+  </main>
+
+  <script src="js/estructuras.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

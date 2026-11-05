@@ -1,0 +1,16 @@
+# Archivos generados al ejecutar
+__pycache__/
+*.pyc
+proyectos/datos-y-archivos-python/salida/
+*.danado
+*.mem.tmp
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

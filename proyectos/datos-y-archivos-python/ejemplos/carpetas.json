@@ -1,0 +1,12 @@
+{
+  "raiz/": {
+    "documentos/": {
+      "informe.txt": {"tipo": "texto", "tamano_kb": 120},
+      "proyectos/": {
+        "plan.txt": {"tipo": "texto", "tamano_kb": 34}
+      }
+    },
+    "musica/": {},
+    "foto.png": {"tipo": "imagen", "tamano_kb": 860}
+  }
+}

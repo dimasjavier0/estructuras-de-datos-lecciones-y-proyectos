@@ -1,0 +1,69 @@
+:root {
+  --fondo: #f6f7f9;
+  --superficie: #ffffff;
+  --texto: #1f2933;
+  --tenue: #5b6875;
+  --borde: #d4dae1;
+  --acento: #1f5fa8;
+  --resaltado: #f4b740;
+  --error: #b42318;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+header, main { max-width: 860px; margin: 0 auto; padding: 16px; }
+header h1 { margin: 16px 0 4px; }
+header p { margin: 0; color: var(--tenue); }
+
+section {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+h2 { margin: 0 0 4px; font-size: 1.2rem; }
+section > p:first-of-type { margin-top: 0; color: var(--tenue); }
+
+form { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+
+button, input, select {
+  min-height: 40px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font: inherit;
+}
+input, select { border: 1px solid var(--borde); background: var(--superficie); color: var(--texto); }
+input { width: 130px; }
+button { border: 1px solid var(--acento); background: var(--acento); color: #fff; cursor: pointer; }
+button.secundario { background: var(--superficie); color: var(--acento); }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #8ab6e8; outline-offset: 1px; }
+
+.mensaje { min-height: 1.5em; margin: 10px 0; }
+.error { color: var(--error); }
+.tenue { color: var(--tenue); margin: 8px 0; }
+.desplazable { overflow-x: auto; }
+
+#lienzo-bst { display: block; max-width: 100%; min-height: 80px; margin: 0 auto; }
+.arista { stroke: #9aa5b1; stroke-width: 2; }
+.vertice { fill: var(--acento); }
+.vertice.resaltado { fill: var(--resaltado); }
+.etiqueta { fill: #fff; font-size: 14px; font-weight: 600; text-anchor: middle; }
+
+table { border-collapse: collapse; width: 100%; }
+#recorridos th { width: 42%; text-align: left; font-weight: 500; }
+#recorridos th, #recorridos td { padding: 6px 8px; border-top: 1px solid var(--borde); overflow-wrap: anywhere; }
+
+.monticulo { width: auto; margin: 0 auto; }
+.monticulo td { width: 40px; height: 40px; padding: 4px; border: 1px solid var(--acento); text-align: center; }
+.monticulo td.hueco { border: 0; }
+
+#vista-general ul { margin: 4px 0; padding-left: 22px; }

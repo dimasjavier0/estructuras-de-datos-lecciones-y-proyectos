@@ -1,0 +1,9 @@
+# Red de ejemplo con datos ficticios.
+# <-> crea el enlace en los dos sentidos.
+Internet <-> Firewall : distancia=30 capacidad=1000 usuarios=120 trafico=450 medio=fibra
+Firewall <-> Web : distancia=25 capacidad=1000 usuarios=80 trafico=300 medio=cat6
+Firewall <-> Correo : distancia=60 capacidad=100 usuarios=60 trafico=70 medio=cat5
+Web <-> Aplicacion : distancia=15 capacidad=1000 usuarios=40 trafico=500 medio=cat6
+Correo <-> Aplicacion : distancia=90 capacidad=100 usuarios=20 trafico=30 medio=cat5
+Aplicacion <-> Datos : distancia=10 capacidad=10000 usuarios=5 trafico=1500 medio=fibra
+Correo -> Datos : distancia=300 capacidad=100 usuarios=10 trafico=20 medio=coaxial
